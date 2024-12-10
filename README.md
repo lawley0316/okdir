@@ -82,8 +82,11 @@ species_dir.mkdir()
 species_dir.touch()
 ```
 
-**5 获取文件路径**
+**5 获取文件夹路径**
+
+任何File、Dir的实例都有一个path属性，为一个pathlib.Path的实例：
 
 ```python
 print(species_dir.pictures_dir.lossless_dir.path)
+print(species_dir.pictures_dir.lossless_dir.path / 'foo.png')
 ```
